@@ -1,25 +1,4 @@
-
-/* 
-
-CSS3D
-
-Project: CSS3 Design Contest
-Last change: 27.06.2010
-Designed by: simurai.com
-Works in browsers: FF 3.5+, Opera 10.5+, Safari 4+, Google Chrome 4.0+
-
-To add a stereoscopic 3D effect is really easy.. Actually I was shocked by how easy it was.
-Basically you just need one line of CSS. A text-shadow with a red and cyan offset.
-The trick is to use "em"s for the text-shadows. That way, if you increase the font-size, the text-shadows increase too.
-
-text-shadow: -0.06em 0 red,  0.06em 0 cyan;
-
-Note: Actually you are not limited to text only. You can use the same technique with box-shadows.
-It even works when you add some of webkit's 3D transforms like rotateY.
-
-Have fun! For comments you can tweet to @simurai
-
-*/
+/* CSS3D by @simurai  */
 
 html {
 	font: 62.5%/1 "Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
@@ -39,6 +18,9 @@ span {
 	letter-spacing: 0.08em;							/* make sure the letters don't overlap */
 }
 
+p {
+    margin: 0;
+}
 
 /* ---------------- Stars ---------------- */
 
@@ -123,34 +105,3 @@ span {
 #meta a { text-decoration: none; color: #7276ff; }
 #meta a:hover { color: rgba(114,118,255,0.5); }
 #meta img { vertical-align: text-bottom; }
-
-
-#simurai {
-	width: 100px;
-	height: 300px;
-	position: fixed;
-	z-index: 88;
-	bottom: 60px;
-	right: 40px;
-	opacity: 0.1;
-}
-#simurai:hover {
-	opacity: 1;
-}
-
-
-/* Love */
-
-#love {
-	padding: 10px;
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	background-color: rgba(255,255,255,0.3);
-	-webkit-box-shadow: inset rgba(0,0,0,0.15) 0 1px 2px;
-	border-radius: 0 10px 0 0;
-	opacity: .33;
-}
-#love:hover { opacity: 1; }
-#love * { padding-right: 10px; }
-#love *:last-child { padding-right: 2px; }
