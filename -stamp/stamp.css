@@ -1,0 +1,96 @@
+
+
+/* Stamp ------------------------------------------------------ */
+
+#stamp {
+	position: absolute;
+	z-index: 1000;
+	bottom: 0;
+	right: 0;
+	width: 120px;
+	height: 120px;
+	padding: 0 20px 20px 0;
+	overflow: hidden;
+	}
+
+/* Ink ------------------------------------------------------ */
+
+#stamp > .ink {
+	position: absolute;
+	width: 60px;
+	height: 120px;
+	top: 0px;
+	right: 20px;
+	opacity: .2;
+	
+	-webkit-transform-origin: left center;
+	   -moz-transform-origin: left center;
+	    -ms-transform-origin: left center;
+	     -o-transform-origin: left center;
+	        transform-origin: left center;
+	
+	-webkit-transition: -webkit-transform .2s cubic-bezier(.36,.12,0,1), opacity 3s ease-out;
+	   -moz-transition:    -moz-transform .2s cubic-bezier(.36,.12,0,1), opacity 3s ease-out;
+	    -ms-transition:     -ms-transform .2s cubic-bezier(.36,.12,0,1), opacity 3s ease-out;
+	     -o-transition:      -o-transform .2s cubic-bezier(.36,.12,0,1), opacity 3s ease-out;
+	        transition:         transform .2s cubic-bezier(.36,.12,0,1), opacity 3s ease-out;
+    }
+
+    #stamp:hover > .ink {
+    	opacity: 1;
+    	-webkit-transform: rotate(90deg);
+    	   -moz-transform: rotate(90deg);
+    	    -ms-transform: rotate(90deg);
+    	     -o-transform: rotate(90deg);
+    	        transform: rotate(90deg);
+    	        
+    	-webkit-transition-duration: .2s;
+    	   -moz-transition-duration: .2s;
+    	    -ms-transition-duration: .2s;
+    	     -o-transition-duration: .2s;
+    	        transition-duration: .2s;
+    	}
+
+
+/* Icon ------------------------------------------------------ */
+
+#stamp > .ink > .icon {
+	display: block;
+	width: 60px;
+	height: 120px;
+	background: url(stamp.svg);
+    }
+
+
+/* Links ------------------------------------------------------ */
+
+#stamp > .ink > .links {
+	position: absolute;
+	top: 44px;
+	left: -16px;
+	width: 93px;
+	text-align: center;
+	background: black;
+	-webkit-transform: rotate(-90deg);
+	   -moz-transform: rotate(-90deg);
+	    -ms-transform: rotate(-90deg);
+	     -o-transform: rotate(-90deg);
+	        transform: rotate(-90deg);
+	display: none;
+    }
+
+    #stamp:hover > .ink > .links {
+    	display: block;
+        }
+
+#stamp > .ink > .links > a {
+    display: inline-block;
+    color: #777;
+    padding: 0 3px;
+	text-decoration: none;
+    font: 12px/33px "Lucida Grande", Lucida, Verdana, sans-serif;
+    }
+
+    #stamp > .ink > .links > a:hover {
+        color: white;
+        }
