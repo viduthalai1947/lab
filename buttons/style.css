@@ -13,10 +13,21 @@ html {
 }
 
 body {
+    position: relative;
 	width: 800px;
 	margin: 0 auto;
-	padding: 0 30px 0 390px;
+	padding: 0 30px;
 	text-shadow: rgba(254,255,255,0.5) 0 1px 0;
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 300px;
+    top: 200px;
+    left: 0;
+    background: url(boy.png) no-repeat;
 }
 
 /* Globals */
@@ -55,38 +66,26 @@ code.inline {
 
 /* Side */
 
-aside {
-	position: fixed;
-	left: 60px;
-	top: 40px;
-	width: 300px;
-	text-align: right;
+header {
+    margin-top: 100px;
+    text-align: center;
 }
-aside h1 {
+
+header h1 {
 	font-family:  'Droid Sans';
 	font-size: 6.5em;
 	font-weight: bold;
 }
-aside h2 {
+header h2 {
 	font-size: 2em;
 	color: #919191;
 	margin-bottom: 30px;
 }
-aside #boy {
-	width: 300px;
-	height: 300px;
-	background: url(boy.png) no-repeat 30px;
-}
-aside .meta {
-	display: block;
-	line-height: 1.2em;
-	padding: 10px 10px 10px 180px;
-}
 
 
-/* header */
+/* Demo */
 
-header {
+.demo {
 	text-align: center;
 	padding: 60px;
 	margin-top: 60px;
