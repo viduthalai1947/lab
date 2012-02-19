@@ -38,7 +38,7 @@
 
     #stamp:hover > .ink {
     	opacity: 1;
-    	-webkit-transform: rotate(90deg);
+    	-webkit-transform: rotate(90deg) translateZ(0);
     	   -moz-transform: rotate(90deg);
     	    -ms-transform: rotate(90deg);
     	     -o-transform: rotate(90deg);
