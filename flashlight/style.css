@@ -105,13 +105,13 @@ p {
     }
     
     #box:hover #light {
-    	text-shadow: #fff 0 0 4px, #fcffbb 0 0 30px;
+    	text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
     	
-    	-webkit-transform: rotateY(-70deg);
-    	   -moz-transform: rotateY(-70deg);
-    	    -ms-transform: rotateY(-70deg);
-    	     -o-transform: rotateY(-70deg);
-    	        transform: rotateY(-70deg);
+    	-webkit-transform: rotateY(-60deg);
+    	   -moz-transform: rotateY(-60deg);
+    	    -ms-transform: rotateY(-60deg);
+    	     -o-transform: rotateY(-60deg);
+    	        transform: rotateY(-60deg);
     	        
     	-webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
     	   -moz-transition:    -moz-transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
