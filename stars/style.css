@@ -1,9 +1,10 @@
 
-/* Reflect by simurai.com  */
+/* Reflect by @simurai  */
 
 @import url(http://fonts.googleapis.com/css?family=Vollkorn:bold);
 
 html {
+	height: 100%;
 	font: 62.5%/1 "Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
 	
 	background-color: 	#e9ebf4;	
@@ -13,8 +14,30 @@ html {
 }
 
 body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
 	text-align: center;
+	
+    display: -webkit-box;
+    display:    -moz-box;
+    display:     -ms-box;
+    display:      -o-box;
+    display:         box;
+    
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-box-align: center;
+         -o-box-align: center;
+            box-align: center;
+    
+    -webkit-box-pack: center;
+       -moz-box-pack: center;
+        -ms-box-pack: center;
+         -o-box-pack: center;
+            box-pack: center;
 }
+
 
 #wrapper {
 	padding: 10% 0 15% 0;
@@ -187,20 +210,24 @@ Here all the styles that get applied after a movie gets clicked*/
 	z-index: 	10;
 	width: 		100%;
 	top: 		auto;
-
+    margin:     0;
 	color: 						hsl(52, 100%, 50%);
 	-webkit-text-fill-color: 	transparent;
 	-webkit-text-stroke: 		#fff 3px;
-	-webkit-background-clip: 	text;
-	background-color: 			hsl(52, 100%, 50%);
-	background-image: 	-webkit-gradient(radial, 0% 0, 50, 100% 0, 20, from( rgba(255,255,255,.2) ), to( rgba(255,255,255,0.6) )), 
-						url(noise.png);
+	background: -webkit-gradient(radial, 0% 0, 50, 100% 0, 20, from( rgba(255,255,255,.2) ), to( rgba(255,255,255,0.6) )), 
+						 hsl(52,100%,50%) url(noise.png);
+	-webkit-background-clip: 	text; /*Needs to come after background*/
 	
 	-webkit-user-select: 	text;
 	-webkit-transition: 	-webkit-transform .2s ease-out;
 
 	-webkit-box-reflect: below -70px -webkit-gradient(linear, left top, left bottom, 
 		from(transparent), color-stop(0.2, transparent), to( rgba(255,255,255,0.3) ));
+		
+	/*FF,IE,O*/
+	   -moz-transform: translateY(150px);
+	    -ms-transform: translateY(150px);
+	     -o-transform: translateY(150px);	        
 }
 
 .item:target:nth-child(1) .stars { -webkit-transform: translateX(60px) translateY(150px); }
@@ -208,43 +235,3 @@ Here all the styles that get applied after a movie gets clicked*/
 .item:target:nth-child(3) .stars { -webkit-transform: translateY(150px); }
 .item:target:nth-child(4) .stars { -webkit-transform: translateX(-40px) translateY(150px); }
 .item:target:nth-child(5) .stars { -webkit-transform: translateX(-60px) translateY(150px); }
-
-
-
-
-
-
-
-
-
-
-
-
-/* ----------- end
-
-below just the usual stuff */
-
-strong {
-	font-weight: bold;
-	color: #000;
-}
-
-#meta {
-	color: #777;
-	font-size: 1.2em;
-	line-height: .8em;
-	margin: 30px 0;
-	text-align: center;
-	text-shadow: rgba(255,255,255,0.5) 0 1px 0;	
-} 
-#meta p {
-	margin-bottom: 10px;
-}
-#meta a {
-	text-decoration: none;
-	color: #7276ff;
-}
-#meta a:hover {
-	color: rgba(114,118,255,0.5);
-}
-
