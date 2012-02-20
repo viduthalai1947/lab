@@ -5,14 +5,10 @@
 
 html {
 	font: 62.5%/1 "Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
-	background-color: hsl(200,5%,12%);
-	background-size: 100% 100%, 5px 5px;
-	background-image:   -webkit-linear-gradient( 0deg, 	hsla(0,0%,100%,0) 0px, 
-														hsla(0,0%,100%,.08) 40%,
-														hsla(0,0%,100%,.08) 60%, 
-														hsla(0,0%,100%,0) 100% ),
-	                    -webkit-linear-gradient( 45deg, hsla(0,0%,0%,0) 0px, 
-	                                                    hsla(0,0%,0%,.15) 50%, 
+	background-color: hsl(200,5%,15%);
+	background-size: 5px 5px;
+	background-image:   -webkit-linear-gradient( 45deg, hsla(0,0%,0%,0) 0px, 
+	                                                    hsla(0,0%,0%,.10) 50%, 
 	                                                    hsla(0,0%,0%,0) 100% );
     }
 
@@ -22,15 +18,34 @@ body {
 
 
 
+/* list ------------------------------------------------------ */
+
+ul {
+    list-style: none;
+    padding: 50px 0;
+	margin: 0;
+	font-size: 2em;
+	text-align: center;
+	background-image:   -webkit-linear-gradient( 0deg, 	hsla(0,0%,100%,0) 0px, 
+														hsla(0,0%,100%,.09) 50%,
+														hsla(0,0%,100%,0) 100% );
+	
+    }
+
+ul li {
+	padding: 50px 0;
+    }
+
+
 /* Header ------------------------------------------------------ */
 
-header {
+footer {
     padding: 100px 0 50px 0;
 	color: #4c4c4c;
 	text-shadow: hsla(0,0%,0%,.4) 0 1px;
     }
 
-header h1 {
+footer h1 {
 	font-size: 6.5em;
 	font-weight: bold;
 	text-align: center;
@@ -40,7 +55,7 @@ header h1 {
 	text-shadow: hsla(0,0%,100%,.05) 0 1px 0px;
     }
 
-header h1 .glow  {
+footer h1 .glow  {
 	color: #111d23;
 	-webkit-text-stroke: hsla(200,100%,50%,.2) 1px;
 	text-shadow: 	hsla(200,100%,50%,.6) 1px -1px 1px, 
@@ -48,7 +63,7 @@ header h1 .glow  {
 					hsla(0,0%,0%,.5) 0 6px 8px;
     }
 
-header h2 {
+footer h2 {
 	font-size: 1.5em;
 	line-height: 1.3em;
 	text-align: center;
@@ -58,16 +73,4 @@ header h2 {
 
 
 
-/* list ------------------------------------------------------ */
 
-ul {
-    list-style: none;
-    padding: 0;
-	margin: 0;
-	font-size: 2em;
-	text-align: center;
-    }
-
-ul li {
-	padding: 50px 0;
-    }
