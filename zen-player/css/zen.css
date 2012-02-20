@@ -38,6 +38,7 @@
 	border-radius: 100px;
 	width: 100px;
 	height: 100px;
+	text-align: left; /*Fix for Chrome/FF*/
 	
 	background-color: #000;
 	

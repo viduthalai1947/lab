@@ -38,7 +38,7 @@ body {
 /* Player ------------------------------------------------------ */
 
 #zen {
-	margin: 150px 0;
+	margin: 150px 0; /*Margin for Opera*/
     }
 
 
