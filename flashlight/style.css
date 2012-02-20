@@ -5,6 +5,7 @@
 /* Global ------------------------------------------------------ */
 
 html {
+    overflow: hidden; /*FF fix*/
     height: 100%;
 	font-family: Geneva, sans-serif;
 	background: url(pattern.png), -webkit-radial-gradient( hsl(210, 30%, 20%), hsl(210, 30%, 0%));
@@ -61,11 +62,11 @@ p {
 #flashlight {
 	color: hsla(0,0%,0%,0);
 	
-	-webkit-perspective: 80;
-	   -moz-perspective: 80;
-	    -ms-perspective: 80;
-	     -o-perspective: 80;
-	        perspective: 80;
+	-webkit-perspective: 80px;
+	   -moz-perspective: 30px;
+	    -ms-perspective: 80px;
+	     -o-perspective: 80px;
+	        perspective: 80px;	        
     }
     
     #flashlight:focus {
@@ -108,11 +109,11 @@ p {
     	text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
     	
     	-webkit-transform: rotateY(-60deg);
-    	   -moz-transform: rotateY(-60deg);
+    	   -moz-transform: rotateY(-20deg);
     	    -ms-transform: rotateY(-60deg);
     	     -o-transform: rotateY(-60deg);
     	        transform: rotateY(-60deg);
-    	        
+    	    	        
     	-webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
     	   -moz-transition:    -moz-transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
     	    -ms-transition:     -ms-transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
