@@ -34,6 +34,12 @@ body {
 	    -ms-box-pack: center;
 	     -o-box-pack: center;
 	        box-pack: center;
+	        
+    -webkit-box-orient: vertical;
+       -moz-box-orient: vertical;
+        -ms-box-orient: vertical;
+         -o-box-orient: vertical;
+            box-orient: vertical;
 	}
 	
 .txt[contenteditable] {
@@ -51,7 +57,7 @@ body {
 	-webkit-text-stroke: 1px rgba(0,0,0,0.2); /* Text stroke */
     }
     
-    #text {
+    #text:hover {
     	-webkit-text-stroke: 0;
     	color: transparent;
     	background-color: rgba(82,96,117,0.5);
@@ -64,3 +70,17 @@ body {
     	outline: none;
         }
 
+
+
+
+/* CanIUse ------------------------------------------------------ */
+
+#caniuse {
+    margin: 0 auto;
+    padding: 50px;
+    max-width: 450px;
+}
+
+#caniuse .caniuse {
+    font-size: 12px;
+}

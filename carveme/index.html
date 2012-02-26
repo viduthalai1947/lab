@@ -12,9 +12,7 @@
 
 <body>
 	
-	<p id="text" contenteditable>CarveMe</p>
-	
-	
+	<div id="text" contenteditable>Carve Me</div>	
 	
 	
 <!-- Stamp --------------------------------------- -->
@@ -31,6 +29,12 @@
 
 	
 <!-- js --------------------------------------- -->
+
+<!-- CanIuse -->
+<script>function stripScripts(a){var b=document.createElement("div");b.innerHTML=a;var c=b.getElementsByTagName("script");while(c.length){var d=c[0];d.parentNode.removeChild(d)}return b.innerHTML}
+var x=document.getElementById("text");window.h5pCaniuse=function(a){if(!a.supported){
+x.id = "caniuse"; x.contentEditable = false; x.innerHTML=stripScripts(a.html); }}</script>
+<script src="http://api.html5please.com/textstroke.json?callback=h5pCaniuse&supported&icon&html"></script>	
 		
 <!-- Google -->
 <script type="text/javascript">
