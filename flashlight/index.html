@@ -15,8 +15,8 @@
 	<div id="box">
 		<p id="flashlight"><span id="flash">FLASH</span><span id="light">LIGHT</span></p>
 	</div>
-
 	
+	<div id="h5p-message"></div>
 
 
 
@@ -34,9 +34,15 @@
         </div>
     </nav>
 
-	
+
+
+
 <!-- js --------------------------------------- -->
-		
+
+<!-- CanIuse -->
+<script>function stripScripts(a){var b=document.createElement("div");b.innerHTML=a;var c=b.getElementsByTagName("script");while(c.length){var d=c[0];d.parentNode.removeChild(d)}return b.innerHTML}var x=document.getElementById("h5p-message");window.h5pCaniuse=function(a){if(!a.supported){x.innerHTML=stripScripts(a.html);}}</script>
+<script src="http://api.html5please.com/css-textshadow+transforms3d.json?callback=h5pCaniuse&supported&icon&html"></script>	
+
 <!-- Google -->
 <script type="text/javascript">
   var _gaq = _gaq || [];
