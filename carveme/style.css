@@ -16,30 +16,9 @@ body {
 	width: 100%;
 	height: 100%;
     text-align: center;
-    
-	display: -webkit-box;
-	display:    -moz-box;
-	display:     -ms-box;
-	display:      -o-box;
-	display:         box;
-	
-	-webkit-box-align: center;
-	   -moz-box-align: center;
-	    -ms-box-align: center;
-	     -o-box-align: center;
-	        box-align: center;
-	
+	display: -webkit-box;	
+	-webkit-box-align: center;	
 	-webkit-box-pack: center;
-	   -moz-box-pack: center;
-	    -ms-box-pack: center;
-	     -o-box-pack: center;
-	        box-pack: center;
-	        
-    -webkit-box-orient: vertical;
-       -moz-box-orient: vertical;
-        -ms-box-orient: vertical;
-         -o-box-orient: vertical;
-            box-orient: vertical;
 	}
 	
 .txt[contenteditable] {
@@ -75,12 +54,35 @@ body {
 
 /* CanIUse ------------------------------------------------------ */
 
+.showAlt #text,
+#alt {
+    display: none;
+}
+
+.showAlt #alt {
+    display: block;
+}
+
+#alt {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#alt img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px hsla(0,0%,0%,.15);
+}
+
 #caniuse {
     margin: 0 auto;
-    padding: 50px;
+    padding: 20px;
     max-width: 450px;
 }
 
 #caniuse .caniuse {
     font-size: 12px;
+    background: none;
+    border: none;
+    box-shadow: none;
 }
