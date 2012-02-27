@@ -86,3 +86,40 @@ p {
 	outline: none;
     }
 
+
+
+/* CanIUse ------------------------------------------------------ */
+
+.showAlt #wrapper,
+#alt {
+    display: none;
+}
+
+.showAlt #alt {
+    display: block;
+}
+
+#alt {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#alt img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px hsla(0,0%,0%,.15);
+}
+
+#caniuse {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 450px;
+}
+
+#caniuse .caniuse {
+    color: #333;
+    font-size: 12px;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
