@@ -6,14 +6,41 @@
 <head>
 	<title>umbrUI - WebKit appearance: none</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css"/>	
-	<link rel="stylesheet" type="text/css" href="elements/meter.css"/>
-	<link rel="stylesheet" type="text/css" href="elements/range.css"/>
-	<link rel="stylesheet" type="text/css" href="elements/checkbox.css"/>
-	<link rel="stylesheet" type="text/css" href="elements/number.css"/>
-	<link rel="stylesheet" type="text/css" href="elements/radio.css"/>
-	<link rel="stylesheet" type="text/css" href="elements/progress.css"/>
+	<link rel="stylesheet" href="style.css"/>	
+	<link rel="stylesheet" class="umbrui" href="elements/meter.css"/>
+	<link rel="stylesheet" class="umbrui" href="elements/range.css"/>
+	<link rel="stylesheet" class="umbrui" href="elements/checkbox.css"/>
+	<link rel="stylesheet" class="umbrui" href="elements/number.css"/>
+	<link rel="stylesheet" class="umbrui" href="elements/radio.css"/>
+	<link rel="stylesheet" class="umbrui" href="elements/progress.css"/>
     <link rel="stylesheet" href="../-stamp/stamp.css">
+
+    <script>
+        
+        var rel = "stylesheet";
+        
+        function toggleUmbrUI(){
+            if(rel == "stylesheet") {
+                rel = ""
+            } else {
+                rel = "stylesheet"
+            }
+            
+            var allsuspects = document.getElementsByClassName('umbrui');
+            
+            for (var i=allsuspects.length; i>0; i--){
+                //console.log(allsuspects[i]);
+                console.log(allsuspects[i-1].href);
+                
+                allsuspects[i-1].rel = rel;
+            }
+        }
+        //toggleUmbrUI();
+                
+        
+    </script>
+
+
 </head>
 
 
@@ -73,7 +100,10 @@
 			
 	</footer>
 	
-
+    
+    <aside>
+        <button onclick="toggleUmbrUI()">Toggle CSS</button>
+    </aside>
 
 
 

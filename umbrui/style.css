@@ -37,7 +37,7 @@ ul li {
     }
 
 
-/* Header ------------------------------------------------------ */
+/* Footer ------------------------------------------------------ */
 
 footer {
     padding: 100px 0 50px 0;
@@ -70,6 +70,29 @@ footer h2 {
     }
 
 
+/* Aside ------------------------------------------------------ */
 
+aside {
+    position: fixed;
+    top: 20px;
+    left: 20px;    
+    }
 
+aside button {
+    margin: 0;
+    padding: 10px ;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: hsl(200,100%,60%);
+    background: hsla(0,0%,0%,.12);
+    cursor: pointer;
+    }
 
+aside button:hover {
+    background: hsla(0,0%,0%,.2);
+    }
+
+aside button:active {
+    -webkit-transform: translateY(1px);
+    }
