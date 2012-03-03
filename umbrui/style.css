@@ -59,8 +59,7 @@ footer h1 .glow  {
 	color: #111d23;
 	-webkit-text-stroke: hsla(200,100%,50%,.2) 1px;
 	text-shadow: 	hsla(200,100%,50%,.6) 1px -1px 1px, 
-					hsla(200,100%,50%,.2) 0 -4px 8px, 
-					hsla(0,0%,0%,.5) 0 6px 8px;
+					hsla(0,0%,0%,.3) 0 6px 3px;
     }
 
 footer h2 {
