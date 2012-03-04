@@ -27,7 +27,6 @@ meter {
     background: #000;
 	-webkit-box-shadow: -1px 0 0 hsla(0,0%,100%,.08);
 	-webkit-transform-origin: center 8px;																		
-	-webkit-box-reflect: left -3px -webkit-radial-gradient( 0% 50%, 20% 50%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 95% );
     }
 
 
