@@ -1,6 +1,7 @@
 ---
 info: http://simurai.com/post/980116140/css3-glass-text
 source: https://github.com/simurai/lab/blob/gh-pages/glass/
+caniuse: textstroke+css-masks
 ---
 
 <!DOCTYPE html>
@@ -24,24 +25,8 @@ source: https://github.com/simurai/lab/blob/gh-pages/glass/
 		
 	</div>
 	
-	
-	<div id="alt">
-	    <img src="screenshot.jpg" alt="Screenshot of inset text-shadow" />
-	    <div id="caniuse"></div>
-	</div>	
-
-
 
     {% include includes.html %}
-
-<!-- CanIuse -->
-<script>function stripScripts(a){var b=document.createElement("div");b.innerHTML=a;var c=b.getElementsByTagName("script");while(c.length){var d=c[0];d.parentNode.removeChild(d)}return b.innerHTML}
-window.h5pCaniuse=function(a){if(!a.supported){
-var x=document.getElementById("caniuse"); x.innerHTML=stripScripts(a.html);
-var y=document.querySelector(".caniuse-msg"); y.innerHTML="Ooops.. the above is just a screenshot of the <strong>glass text</strong> demo because it uses features that are unavailable in your browser. Please try:";
-document.body.classList.add("showAlt");
-}}</script>
-<script src="http://api.html5please.com/textstroke+css-masks.json?callback=h5pCaniuse&supported&icon&html"></script>	
 	
 </body>
 </html>

@@ -1,0 +1,39 @@
+/* CanIUse ------------------------------------------------------ */
+
+.showAlt #text,
+#alt {
+    /display: none;
+}
+
+.showAlt #alt {
+    display: block;
+}
+
+#alt {
+    position: absolute;
+    z-index: 1;
+    top: 0; right: 0; bottom: 0; left: 0;
+    text-align: center;
+    padding: 50px;
+    background: hsla(0,0%,0%,.8);
+}
+
+#alt img {
+    border-radius: 4px;
+    box-shadow: 0 1px 4px hsla(0,0%,0%,.15);
+}
+
+#caniuse {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 420px;
+    background: hsl(0,0%,95%);
+    border-radius: 0 0 4px 4px;
+}
+
+#caniuse .caniuse {
+    font-size: 12px;
+    background: none;
+    border: none;
+    box-shadow: none;
+}

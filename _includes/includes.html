@@ -1,5 +1,5 @@
 <!-- Stamp --------------------------------------- -->   
-    <link rel="stylesheet" href="../-stamp/stamp.css">
+    <link rel="stylesheet" href="../-includes/stamp.css">
     <nav id="stamp">
         <div class="ink">
             <span class="icon"></span>
@@ -13,15 +13,16 @@
 
 {% if page.caniuse %}
 <!-- CanIuse --------------------------------------- -->
-<div id="alt">
-    <img src="screenshot.jpg" alt="Screenshot of inset text-shadow" />
-    <div id="caniuse"></div>
-</div>
+    <link rel="stylesheet" href="../-includes/caniuse.css">
+    <div id="alt">
+        <img src="screenshot.jpg" alt="Screenshot" />
+        <div id="caniuse"></div>
+    </div>
 
 <script>function stripScripts(a){var b=document.createElement("div");b.innerHTML=a;var c=b.getElementsByTagName("script");while(c.length){var d=c[0];d.parentNode.removeChild(d)}return b.innerHTML}
 window.h5pCaniuse=function(a){if(!a.supported){
 var x=document.getElementById("caniuse"); x.innerHTML=stripScripts(a.html);
-var y=document.querySelector(".caniuse-msg"); y.innerHTML="Ooops.. the above is just a screenshot of the <strong>inset text-shadow</strong> demo because it uses features that are unavailable in your browser. Please try:";
+var y=document.querySelector(".caniuse-msg"); y.innerHTML="Sorry.. the above is just a screenshot of page because it uses features <strong>({{ page.caniuse }})</strong> that are unavailable in your browser. Please try:";
 document.body.classList.add("showAlt");
 }}</script>
 <script src="http://api.html5please.com/{{ page.caniuse }}.json?callback=h5pCaniuse&supported&icon&html"></script>	
