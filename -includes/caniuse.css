@@ -1,8 +1,7 @@
 /* CanIUse ------------------------------------------------------ */
 
-.showAlt #text,
 #alt {
-    /display: none;
+    display: none;
 }
 
 .showAlt #alt {
