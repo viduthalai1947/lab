@@ -1,5 +1,5 @@
 
-/* Reflect by @simurai  */
+/* Filters by @simurai  */
 
 @import url(http://fonts.googleapis.com/css?family=Vollkorn:bold);
 
@@ -147,14 +147,6 @@ here it gets interesting */
 	-webkit-transition: -webkit-transform .1s cubic-bezier(.27, .06, .17, .99);
 }
 
-/* 3D transforms are still a bit funky
-.item:nth-child(1) a:hover .case { -webkit-transform: perspective(300) translateY(-20px) rotateZ(-4deg) rotateX(10deg); }
-.item:nth-child(2) a:hover .case { -webkit-transform: perspective(300) translateY(-20px) rotateZ(-2deg) rotateX(10deg); }
-.item:nth-child(3) a:hover .case { -webkit-transform: perspective(300) translateY(-20px) rotateZ(0deg) rotateX(10deg); }
-.item:nth-child(4) a:hover .case { -webkit-transform: perspective(300) translateY(-20px) rotateZ(2deg) rotateX(10deg); }
-.item:nth-child(5) a:hover .case { -webkit-transform: perspective(300) translateY(-20px) rotateZ(4deg) rotateX(10deg); }
-*/
-
 
 /* ----------- active */
 .item a:active .case {
@@ -162,13 +154,6 @@ here it gets interesting */
 	-webkit-transition: -webkit-transform .1s ease-out;
 }
 
-/* 3D transforms are still a bit funky
-.item:nth-child(1) a:active .case { -webkit-transform: perspective(300) translateY(-20px) rotateZ(-4deg) rotateX(10deg) scale(.9); }
-.item:nth-child(2) a:active .case { -webkit-transform: perspective(300) translateY(-20px) rotateZ(-2deg) rotateX(10deg) scale(.9); }
-.item:nth-child(3) a:active .case { -webkit-transform: perspective(300) translateY(-20px) rotateZ(0deg) rotateX(10deg) scale(.9); }
-.item:nth-child(4) a:active .case { -webkit-transform: perspective(300) translateY(-20px) rotateZ(2deg) rotateX(10deg) scale(.9); }
-.item:nth-child(5) a:active .case { -webkit-transform: perspective(300) translateY(-20px) rotateZ(4deg) rotateX(10deg) scale(.9); }
-*/
 
 
 /* ----------- :target 
@@ -185,7 +170,7 @@ Here all the styles that get applied after a movie gets clicked*/
 .item:target a img {
 	margin: 	0 5px;
 	padding: 	0;
-	-webkit-border-radius: 6px / 4px;
+	border-radius: 6px / 4px;
 }
 
 .item:target a .case:before {
