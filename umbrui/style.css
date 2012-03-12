@@ -37,15 +37,15 @@ ul li {
     }
 
 
-/* Footer ------------------------------------------------------ */
+/* Header ------------------------------------------------------ */
 
-footer {
-    padding: 100px 0 50px 0;
+header {
+    padding: 30px 0;
 	color: #4c4c4c;
 	text-shadow: hsla(0,0%,0%,.4) 0 1px;
     }
 
-footer h1 {
+header h1 {
 	font-size: 6.5em;
 	font-weight: bold;
 	text-align: center;
@@ -55,18 +55,18 @@ footer h1 {
 	text-shadow: hsla(0,0%,100%,.05) 0 1px 0px;
     }
 
-footer h1 .glow  {
+header h1 .glow  {
 	color: #111d23;
 	-webkit-text-stroke: hsla(200,100%,50%,.2) 1px;
 	text-shadow: 	hsla(200,100%,50%,.6) 1px -1px 1px, 
 					hsla(0,0%,0%,.3) 0 6px 3px;
     }
 
-footer h2 {
+header h2 {
 	font-size: 1.5em;
 	line-height: 1.3em;
 	text-align: center;
-	margin: 10px 0 40px 0;
+	margin: 10px 0 20px 0;
     }
 
 
