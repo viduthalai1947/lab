@@ -1,20 +1,31 @@
-<!-- Stamp --------------------------------------- -->   
-    <link rel="stylesheet" href="../-includes/stamp.css">
-    <nav id="stamp">
-        <div class="ink">
-            <span class="icon"></span>
-            <div class="links">
-                <a href="{{ page.info }}">Info</a>
-                <a href="{{ page.source }}">Source</a>
-            </div>
+<!-- Footer --------------------------------------- -->
+    <div id="footer">
+        <link rel="stylesheet" href="../-includes/footer.css">
+        
+        <h1>{{ page.title }}</h1>
+        <nav class="links">
+            <a href="{{ page.info }}">Info</a>
+            <a href="{{ page.source }}">Source</a>
+        </nav>
+        
+        <div class="social">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="simurai" data-count="none">Tweet</a>
+            <a href="https://twitter.com/simurai" class="twitter-follow-button" data-show-count="false">Follow @simurai</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
-    </nav>
+        
+        <nav class="stamp">
+            <div class="ink"></div>
+        </nav>
+        
+    </div>
 
 
+    
 {% if page.caniuse %}
 <!-- CanIuse --------------------------------------- -->
-    <link rel="stylesheet" href="../-includes/caniuse.css">
     <div id="alt">
+        <link rel="stylesheet" href="../-includes/caniuse.css">
         <img src="screenshot.jpg" alt="Screenshot" />
         <div id="caniuse"></div>
     </div>
@@ -28,7 +39,8 @@ document.body.classList.add("showAlt");
 <script src="http://api.html5please.com/{{ page.caniuse }}.json?callback=h5pCaniuse&supported&icon&html"></script>	
 {% endif %}
 
-		
+
+	
 <!-- Google --------------------------------------- -->
 <script type="text/javascript">
   var _gaq = _gaq || [];
