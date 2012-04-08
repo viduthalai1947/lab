@@ -1,0 +1,44 @@
+/*
+ * Animated Mask Icons
+ * Author: simurai
+ *
+ */
+
+
+/* -------------- Cloud -------------- */
+
+i.cloud::before {
+    content: "";
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: -webkit-linear-gradient(-45deg, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,.15) 50%, hsla(0,0%,100%,0) 50% );
+    }
+
+i.cloud {
+    background-image: -webkit-radial-gradient( 50% 40%, 80% 60%, 
+                        hsla(0,0%,100%,.3), hsla(0,0%,100%,0) 50%, hsla(0,0%,0%,.8) ),
+                        url(../img/whirl.jpg);
+    background-position: center, 25% 0%;
+    
+    -webkit-mask-image: url(../svg/cloud.svg), url(../svg/cloud.svg);
+    -webkit-mask-position: 0 0, -100px 30px;
+    -webkit-mask-composite: source-out;
+    
+    -webkit-transition: -webkit-mask-position .4s cubic-bezier(.65, .06, 1, .42);
+    }
+
+i.cloud:hover {
+    -webkit-mask-position: 0 0, -100px 0px;
+    -webkit-transition: -webkit-mask-position .3s cubic-bezier(0, .40, .20, 1);    
+    }
+
+i.cloud:active {
+    -webkit-mask-composite: xor;
+    -webkit-mask-position: 0 0, -100px -100px;
+    -webkit-transition: -webkit-mask-position .4s cubic-bezier(.65, .06, 1, .42);    
+    -webkit-animation: cloud-active 1s .4s cubic-bezier(0, .80, 1, .20) infinite;
+    }
+    @-webkit-keyframes cloud-active {
+          0% { -webkit-mask-position: 0 0, -100px 30px; }
+        100% { -webkit-mask-position: 0 0, -100px -100px; }
+    }

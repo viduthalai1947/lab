@@ -1,0 +1,45 @@
+/*
+ * Animated Mask Icons
+ * Author: simurai (simurai.com)
+ *
+ */
+
+
+/* -------------- Apple -------------- */
+
+i.apple {
+    background-image: -webkit-radial-gradient( 50% 40%, 80% 60%, 
+                        hsla(0,0%,100%,.5), hsla(0,0%,100%,0) 30%, hsla(0,0%,0%,0) 30%, hsla(0,0%,0%,0) ),
+                        -webkit-linear-gradient( top,    hsla(100,100%,60%,.5) 35%, 
+                                                         hsla( 50,100%,60%,.5) 35%,
+                                                         hsla( 50,100%,60%,.5) 47%,
+                                                         hsla( 30,100%,60%,.5) 47%, 
+                                                         hsla( 30,100%,60%,.5) 59%,
+                                                         hsla(  0,100%,60%,.5) 59%, 
+                                                         hsla(  0,100%,60%,.5) 71%,
+                                                         hsla(300,100%,60%,.5) 71%,
+                                                         hsla(300,100%,60%,.5) 83%,
+                                                         hsla(210,100%,60%,.5) 83% ),
+                        url(../img/wood.jpg);
+    background-size: auto, 100px 65px, auto;
+    background-position: center, center;
+    
+    -webkit-mask-image: url(../svg/apple.svg), url(../svg/apple.svg);
+    -webkit-mask-position: 0 0, -60px 0px;
+    -webkit-mask-composite: source-out;    
+    -webkit-transition: -webkit-mask-position .4s cubic-bezier(.44, .08, .10, 1);
+    }
+
+i.apple:hover {
+    -webkit-mask-position: 0 0, -100px 0px;
+    -webkit-transition: -webkit-mask-position .2s cubic-bezier(.44, .08, .10, 1);
+    }
+
+i.apple:active {
+    -webkit-mask-position: 0 0, -106px 0px;
+    -webkit-animation: apple-active .6s linear infinite;   
+    }
+    @-webkit-keyframes apple-active {
+          0% { background-position: center, center      0, 50% 34%; }
+        100% { background-position: center, center -65px, 50% 34%; }
+    }
