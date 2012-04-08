@@ -40,7 +40,7 @@ body {
 
 
 
-nav {
+#icons {
     border-radius: 50px;
     padding: 0 20px;
     margin: 0 40px;
@@ -50,13 +50,13 @@ nav {
 
 
 
-p {
+#help {
     color: #aaa;
     margin-top: 30px;
     font-size: 1.1rem;
     }
 
-strong {
+#help strong {
     color: #777;
     }
 
