@@ -37,16 +37,13 @@
     <div id="alt">
         <link rel="stylesheet" href="../-includes/caniuse.css">
         <img src="screenshot.jpg" alt="Screenshot" />
-        <div id="caniuse"></div>
+        <div id="h5p-message"></div>
     </div>
-
-<script>function stripScripts(a){var b=document.createElement("div");b.innerHTML=a;var c=b.getElementsByTagName("script");while(c.length){var d=c[0];d.parentNode.removeChild(d)}return b.innerHTML}
-window.h5pCaniuse=function(a){if(!a.supported){
-var x=document.getElementById("caniuse"); x.innerHTML=stripScripts(a.html);
-var y=document.querySelector(".caniuse-msg"); y.innerHTML="Sorry, this page uses features <strong>({{ page.caniuse }})</strong> that are unavailable in your browser. Please try:";
-document.body.classList.add("showAlt");
-}}</script>
-<script src="http://api.html5please.com/{{ page.caniuse }}.json?callback=h5pCaniuse&supported&icon&html"></script>	
+    <script>window.h5please=function(a){ if(!a.supported){
+        document.getElementById("h5p-message").innerHTML=a.html;
+        document.body.classList.add("showAlt"); }}
+    </script>
+    <script async src="http://api.html5please.com/{{ page.caniuse }}.json?callback=h5please&icon&html"></script>
 {% endif %}
 
 
