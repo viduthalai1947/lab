@@ -41,8 +41,6 @@ $(document).ready(function(){
 	
 	// preload, update, end
 	
-	
-	
 	player.bind($.jPlayer.event.progress, function(event) {    
 			
 		var audio = $('#zen audio').get(0);
@@ -51,9 +49,9 @@ $(document).ready(function(){
 		if ((audio.buffered != undefined) && (audio.buffered.length != 0)) {
 		 	pc = parseInt(((audio.buffered.end(0) / audio.duration) * 100), 10); 
 		  	displayBuffered(pc);
-		  	console.log(pc);
-		  	if(pc >= 100) {
-		  		console.log("loaded");
+		  	//console.log(pc);
+		  	if(pc >= 99) {
+		  		//console.log("loaded");
 		  		$('#zen .buffer').addClass("loaded");
 		  	}  
 		}        
