@@ -72,7 +72,7 @@ li a:active img {
 	-webkit-transform: scale(.8);
 	-moz-transform: scale(.8);
 	-o-transform: scale(.8);
-	-ms-transform: scale(.8);
+	-ms-transform: scale(.9);
 	transform: scale(.8);
 
 	-webkit-transition: -webkit-transform .06s cubic-bezier(.5,.1,.1,1);
